@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Metadatos-->
+
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous">
+    <!--Bootstrap-->
+
+    <!--titulo-->
+    <title>cristina Maser</title>
+    <!--titulo-->
+
+    <!--Css-->
+    <link rel="stylesheet" href="/style.css">
+    
+  </head>
+
+  <body class="wallpaper">
+    <!-- Barra de Navegación -->
+    <header>
+      <nav
+        class="navbar navbar-expand-sm navbar-dark navbar-dark"
+        aria-label="Third navbar example"
+      >
+        <div class="container-fluid nav-fluid">
+          <a class="navbar-brand" href="/index.html">Cristina Maser</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample03"
+            aria-controls="navbarsExample03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >¡Calentario!</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Bodas</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Presupuesto</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Invitaciones de boda</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Papelería de boda</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Mapas de boda</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Laminas</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Láminas botánicas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Láminas de nacimiento</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Láminas personalizadas</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Papelería</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Planificadores</a></li>
+                  <li><a class="dropdown-item" href="#">Cuadernos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contacto/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Barra de Navegación -->
+
+    <!--Main-->
+    <main>
+      <div class="contact_form">
+        <div class="formulario">
+          <h1>Contactate con nosotros</h1>
+          
+          <form id="form" action="submeter-formulario" method="post">
+            <p>
+              <label for="nombre" class="colocar_nombre"
+                >Nombre
+                <span class="obligatorio">*</span>
+              </label>
+              <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre"/>
+            </p>
+
+            <p>
+                <label for="apellido" class="colocar_apellido">Apellido
+                  <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="introducir_apellido" id="apellido" required="obligatorio" placeholder="Escribe tu apellido"/>
+              </p>
+
+            <p>
+              <label for="email" class="colocar_email">Email
+                <span class="obligatorio">*</span>
+              </label>
+              <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email"/>
+            </p>
+
+            <p>
+              <label for="telefone" class="colocar_telefono">Teléfono </label>
+              <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono"/>  
+            </p>
+
+            <p>
+              <label>Fecha de nacimiento:
+              <input type="date" name="party" min="2015-01-31" max="2023-12-31" />
+            </label>
+            </p>
+
+            <!-- <p>
+                <label for="t1">¿En que region te encuentras?<span class="obligatorio">*</span></label>
+                <input type="text" id="t1" name="fruit" list="l1" required
+                       pattern=" ">
+                <datalist id="l1">
+                  <option>Andalucia</option>
+                  <option>Aragón</option>
+                  <option>Asturias</option>
+                  <option>Baleares</option>
+                  <option>Canarias</option>
+                  <option>Cantabria</option>
+                  <option>Castilla-La Mancha</option>
+                  <option>Castilla y Leon</option>
+                  <option>Cataluña</option>
+                  <option>Extremadura</option>
+                  <option>Galicia</option>
+                  <option>Madrid</option>
+                  <option>La Rioja</option>
+                  <option>C. Valenciana</option>
+                  <option>País Vasco</option>
+                 </datalist>
+            </p> -->
+
+              <!-- <select>
+                <option value="value1"Andalucia></option>
+                <option value="value2"Aragón></option>
+                <option value="value3"Asturias></option>
+                <option value="value4"Baleares></option>
+                <option value="value5"Canarias></option>
+                <option value="value6"Cantabria></option>
+                <option value="value7"Castilla-La Mancha></option>
+                <option value="value8"Castilla y Leon></option>
+                <option value="value9"Cataluña></option>
+                <option value="value10"Castilla y Leon></option>
+                <option value="value11"Cataluña></option>
+                <option value="value12"Extremadura></option>
+                <option value="value13"Galicia></option>
+                <option value="value14"Madrid></option>
+                <option value="value15"Navarra></option>
+                <option value="value16"La Rioja></option>
+                <option value="value17"C. Valenciana></option>
+                <option value="value18"País Vasco></option>
+              </select> -->
+              <p>
+                <label for="informacion">¿te gustaria recibir información sobre nosotros?</label>
+                <input type="radio" name="introducir_informacione" id="nombre" required="obligatorio" placeholder="Escribe tu nombre"/>
+              </p>
+
+            
+              <label for="asunto" class="colocar_asunto">Asunto
+                <span class="obligatorio">*</span>
+              </label>
+              <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto"/>
+            </p>
+
+            <p>
+              <label for="mensaje" class="colocar_mensaje">Mensaje
+                <span class="obligatorio">*</span>
+              </label>
+              <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+            </p>
+
+            <div class="Acepto_terminos">
+                <input type="checkbox"><p>Acepto la política de privacidad</p>
+             </div>
+
+            <button type="submit" name="enviar_formulario" id="enviar">
+              <p>Enviar</p>
+            </button>
+
+            <p class="aviso">
+              <span class="obligatorio">*</span>los campos son obligatorios.
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!--Main-->
+
+
+    <!-- Pie de página -->
+    <footer class="bg-light border-top text-center text-bg-primary">
+      <div class="container p-4">
+        <section class="mb-4">
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="https://www.facebook.com/factoriaf5/"
+            target="_blank"
+            role="button"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="https://twitter.com/factoriaf5"
+            target="_blank"
+            role="button"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="https://www.instagram.com/factoria_f5/"
+            target="_blank"
+            role="button"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="https://www.linkedin.com/company/factor%C3%ADaf5/"
+            target="_blank"
+            role="button"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a
+            class="btn btn-outline-secondary btn-floating m-1"
+            href="https://www.youtube.com/channel/UCazHbN7ChOJxRXW0-K1zczw"
+            target="_blank"
+            role="button"
+            ><i class="fa fa-youtube"></i
+          ></a>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: #C59C5C">
+        © 2023 Copyright: Cristina Maser
+      </div>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="/script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
